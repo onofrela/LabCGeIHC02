@@ -98,7 +98,7 @@ void CrearPiramideTriangular()
 	GLfloat vertices_piramide_triangular[] = {
 		-0.5f, -0.5f,0.0f,	//0
 		0.5f,-0.5f,0.0f,	//1
-		0.0f,0.366f, 0.311f,	//2
+		0.0f,0.366f, 0.288f,	//2
 		0.0f,-0.5f,0.866f,	//3
 
 	};
@@ -115,7 +115,7 @@ void CrearPiramideTriangularSeparada(float distancia)
 	GLfloat vertices_originales[12] = {
 		-0.5f, -0.5f, 0.0f,   //0
 		0.5f, -0.5f, 0.0f,    //1
-		0.0f, 0.366f, 0.311f, //2
+		0.0f, 0.366f, 0.288f, //2
 		0.0f, -0.5f, 0.866f   //3
 	};
 
@@ -519,7 +519,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.5f, -1.05f, -2.95f));
+		model = glm::translate(model, glm::vec3(0.5f, -1.05f, -2.975f));
 		model = glm::rotate(model, 180 * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, -40 * toRadians, glm::vec3(1.0f, 0.0f, 0.0f));
 		//otras transformaciones para el objeto
@@ -534,7 +534,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(-0.5f, -1.05f, -2.95f));
+		model = glm::translate(model, glm::vec3(-0.5f, -1.05f, -2.975f));
 		model = glm::rotate(model, 180 * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, -40 * toRadians, glm::vec3(1.0f, 0.0f, 0.0f));
 		//otras transformaciones para el objeto
@@ -577,7 +577,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(-0.53f, -0.2f, -2.64f));
+		model = glm::translate(model, glm::vec3(-0.53f, -0.2f, -2.66f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -590,7 +590,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.53f, -0.2f, -2.64f));
+		model = glm::translate(model, glm::vec3(0.53f, -0.2f, -2.66f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -603,7 +603,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.0f, -0.2f, -2.64f));
+		model = glm::translate(model, glm::vec3(0.0f, -0.2f, -2.69f));
 		model = glm::rotate(model, 180 * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::rotate(model, -40 * toRadians, glm::vec3(1.0f, 0.0f, 0.0f));
 		//otras transformaciones para el objeto
@@ -620,7 +620,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.0f, 0.66f, -2.325f));
+		model = glm::translate(model, glm::vec3(0.0f, 0.66f, -2.375f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -648,7 +648,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(-0.005f, -1.05f, -1.225f));
+		model = glm::translate(model, glm::vec3(0.0f, -1.05f, -1.225f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -660,7 +660,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(-0.10f, -1.28f, -1.25f));
+		model = glm::translate(model, glm::vec3(-0.12f, -1.28f, -1.25f));
 		model = model * glm::mat4_cast(
 			glm::angleAxis(glm::radians(180.0f), glm::vec3(0.0f, 0.0f, 1.0f)) *
 			glm::angleAxis(glm::radians(-120.0f), glm::vec3(0.0f, 1.0f, 0.0f)) *
@@ -744,7 +744,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.10f , -1.28f, -1.25f));
+		model = glm::translate(model, glm::vec3(0.12f , -1.28f, -1.25f));
 		model = model * glm::mat4_cast(
 			glm::angleAxis(glm::radians(180.0f), glm::vec3(0.0f, 0.0f, 1.0f))*
 			glm::angleAxis(glm::radians(120.0f), glm::vec3(0.0f, 1.0f, 0.0f))*
@@ -782,7 +782,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.125f, -0.44f, -1.8f));
+		model = glm::translate(model, glm::vec3(0.13f, -0.44f, -1.85f));
 		model = model * glm::mat4_cast(
 			glm::angleAxis(glm::radians(180.0f), glm::vec3(0.0f, 0.0f, 1.0f)) *
 			glm::angleAxis(glm::radians(120.0f), glm::vec3(0.0f, 1.0f, 0.0f)) *
@@ -803,7 +803,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(-0.50f, -1.05f, -2.24f));
+		model = glm::translate(model, glm::vec3(-0.49f, -1.05f, -2.24f));
 		model = glm::rotate(model, 180 * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
@@ -817,7 +817,7 @@ int main()
 		model = glm::rotate(model, glm::radians(mainWindow.getrotax()), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(mainWindow.getrotay()), glm::vec3(0.0f, 1.0f, 0.0f));  //al presionar la tecla Y se rota sobre el eje y
 		model = glm::rotate(model, glm::radians(mainWindow.getrotaz()), glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(0.50f, -1.05f, -2.24f));
+		model = glm::translate(model, glm::vec3(0.49f, -1.05f, -2.24f));
 		model = glm::rotate(model, 180 * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
 		//otras transformaciones para el objeto
 		model = glm::scale(model, glm::vec3(0.825f, 0.825f, 0.825f));
@@ -845,5 +845,3 @@ int main()
 	}
 	return 0;
 }
-
-
