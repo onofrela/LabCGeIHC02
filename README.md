@@ -7,4 +7,8 @@ Semestre 7
 
 Repositorio que almacena las prácticas y ejercicios de Laboratorio de Computación Gráfica e Interacción Humano Computadora.
 
-Estas prácticas y ejercicios se realizan por medio de OpenGL versión moderna, GLFW, C, C++.
+Para esta práctica se modelará un globo aerostático con animaciones por keyframe por medio de teclado, y que será integrado al proyecto.
+
+El link para acceder al modelo y textura del globo es el siguiente:
+
+https://drive.google.com/drive/folders/1rNjKeTMYosWb37_FW3GN39OqhQR0sIX-?usp=sharing
